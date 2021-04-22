@@ -56,25 +56,32 @@ nav a:hover::after {
     transform: scaleX(1)
 }
 
-img {
+.image-section {
     margin-left: 40px;
     float: left;
     display: inline;
+    size: 40%
+}
+
+.thinking {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 #card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     float: left;
+    size: 40%;
     display: inline;
-    width: 600px;
-    height: 200px;
+    width: 700px;
+    height: 250px;
     margin-top: 90px;
-    padding: 60px 40px 60px 40px;
-}
-
-#card span {
-    margin-left: 5px;
+    padding: 60px 50px 60px 50px;
+    text-align: justify;
+    line-height: 2.0;
 }
 
 #card:hover {
