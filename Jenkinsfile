@@ -46,10 +46,9 @@ spec:
         stage('Deploy') {
           steps {
             container('kubectl'){
-              sh("sed -i.bak 's#gcr.io/gcr-project/sample:1.0.0#${IMAGE_TAG}#' ./k8s/*.yaml")
-              sh("kubectl --namespace=${NAMESPACE} apply -f ./k8s/deploy.yaml")
-              sh("kubectl --namespace=${NAMESPACE} apply -f ./k8s/service.yaml")
-              sh("kubectl --namespace=${NAMESPACE} apply -f ./k8s/ingress.yaml") 
+           // sh ('gcloud builds submit -t ${IMAGE_TAG} .')
+              sh("sed -i.bak 's#gcr.io/gcr-project/sample:1.0.0#${IMAGE_TAG}#' ./deployment/*.yaml")
+              sh("kubectl --namespace=${NAMESPACE} apply -f ./deployment/")
             }
           }
         }
