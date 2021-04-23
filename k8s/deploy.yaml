@@ -10,7 +10,7 @@ spec:
   replicas: 1
   template:
     metadata:
-      name: website
+      name: website-deployment
       labels:
         app: website
         role: frontend
@@ -29,5 +29,5 @@ spec:
             path: /
             port: 80
         ports:
-        - name: website
+        - name: website-port
           containerPort: 80
