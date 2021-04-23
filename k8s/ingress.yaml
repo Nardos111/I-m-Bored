@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: website-ingress
+spec:
+  rules:
+  - host: website.jenkins.app
+    http:
+      paths:
+      - backend:
+          serviceName: website-service
+          servicePort: 80
+        path: /
