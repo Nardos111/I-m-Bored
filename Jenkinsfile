@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    PROJECT = "My First Project"
+    PROJECT = "project-one"
     APP_NAME = "website"
     NAMESPACE = "website"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${BUILD_NUMBER}"
