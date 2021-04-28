@@ -1,20 +1,21 @@
 
 const imageRandom = document.getElementById("dog");
+const para = document.getElementById("doginfo")
 
-
-
+const button = document.getElementById("getdog")
 
 
 function getRandomImage() {
-    const randomImageApiUrl = "https://dog.ceo/api/breeds/image/random";
-    fetch(randomImageApiUrl)
+    const randomImageApiUrl = "https://api.thedogapi.com/v1/images/search";
+    fetch(randomImageApiUrl, options)
         .then(function (response) {
             return response.json();
         })
         .then(function (json) {
             console.log(json);
-            var imageUrl = json.message;
+            var imageUrl = json[0].url;
             imageRandom.src = imageUrl;
+            para.innerHTML = json[0].breeds[0].name
 
         })
         .catch(function (error) {
@@ -22,6 +23,17 @@ function getRandomImage() {
 
         });
 }
+button.onclick = function () {
+    getRandomImage();
+}
 
-getRandomImage();
+
+const options = {
+    method: 'GET',
+    headers: {
+        "Accept": "application/json"
+    }
+};
+
+
 
