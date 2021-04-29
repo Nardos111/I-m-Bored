@@ -1,1 +1,53 @@
 @import url("./style.css");
+.row {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#getmeal {
+    margin-left: 43%;
+}
+
+button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgb(81, 28, 37);
+    border: 2px solid rgb(81, 28, 37);
+    border-radius: 0.6em;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+button:hover, button:focus {
+    color: #fff;
+    outline: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#instructions {
+    line-height: 30px;
+}

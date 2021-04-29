@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../resources/css/advice.css">
+    <link rel="stylesheet" href="../resources/css/meals.css">
     <title>I'm bored</title>
 </head>
 
@@ -15,19 +15,56 @@
         <nav>
             <a href="../index.html">Home</a>
             <a href="./about.html">About</a>
-            <a href="./meals.html">Random Meals</a>
-            <a href="#">Random Jokes</a>
-            <a href="#"> Dogs</a>
+            <a href="./advice.html">Random Advices</a>
+            <a href="./jokes.html">Dad Jokes</a>
+            <a href="./dogs.html">Explore Dogs</a>
         </nav>
     </header>
-    <div id="card" class="advice">
+    <div>
         <span>
-            <strong>
-                <p id="joke"></p>
-            </strong>
-            <p id="meal"></p>
-            <button id="getmeal"></button>
-
+            <button id="getmeal">Another Meal</button>
+            <div class="row">
+                <div class="columns five">
+                    <h4 class="header" id="meal">Chocolate Gateau</h4>
+                    <img src="https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg" width="700"
+                        height="515" alt="Meal Image" id="image">
+                    <p class="header"><b>Category</b></p>
+                    <p id="category">Dessert</p>
+                    <p class="header"><b>Area</b></p>
+                    <p id="area">French</p>
+                    <p class="header"><b>Tags</b></p>
+                    <p id="tags">Cake,Chocolate,Desert,Pudding</p>
+                    <p class="header"><b>Ingredients</b></p>
+                    <ul id="ingredients">
+                        <ul>Plain chocolate - 250g</ul>
+                        <ul>Butter - 175g</ul>
+                        <ul>Milk - 2 tablespoons</ul>
+                        <ul>Eggs - 5</ul>
+                        <ul>Granulated Sugar - 175g</ul>
+                        <ul>Flour - 125g</ul>
+                    </ul>
+                </div>
+                <div class="columns seven">
+                    <p class="header"><b>Instructions</b></p>
+                    <p id="instructions">Preheat the oven to 180°C/350°F/Gas Mark 4. Grease and line the base of an 8 in
+                        round spring form cake tin with baking parchment Break the chocolate into a heatproof bowl and
+                        place over a saucepan of gently simmering water and stir until it melts. (or melt in the
+                        microwave for 2-3 mins stirring occasionally) Place the butter and sugar in a mixing bowl and
+                        cream together with a wooden spoon until light and fluffy. Gradually beat in the eggs, adding a
+                        little flour if the mixture begins to curdle. Fold in the remaining flour with the cooled,
+                        melted chocolate and milk. Mix until smooth. Spread the mixture into the cake tin and bake for
+                        50-55 mins or until firm in the centre and a skewer comes out cleanly. Cool for 10 minutes, then
+                        turn out and cool completely.</p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="header"><b>Video Recipe</b></p>
+                <div class="videoWrapper">
+                    <iframe id="video" width="600" height="415"
+                        src="https://www.youtube.com/embed/u_OSIChzuL0&ab_channel=KirstieBevan">
+                    </iframe>
+                </div>
+            </div>
         </span>
     </div>
     <script type="text/javascript" src="../resources/script/meals.js"></script>
