@@ -3,33 +3,42 @@
     margin-left: 22%;
 }
 
-#reload {
-    color: #fff;
-    box-shadow: 0 0 40px 40px rgb(88, 23, 36) inset;
-    transition: all 150ms ease-in-out;
-}
-
-#reload:hover {
-    box-shadow: 0 0 2px 0 rgb(88, 23, 36) inset, 0 0 10px 4px rgb(88, 23, 36);
-    color: rgb(88, 23, 36)
-}
-
 button {
     box-sizing: border-box;
-    background-color: transparent;
-    border: 2px solid rgb(88, 23, 36);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgb(81, 28, 37);
+    border: 2px solid rgb(81, 28, 37);
     border-radius: 0.6em;
+    color: #fff;
     cursor: pointer;
     display: flex;
     align-self: center;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
+    margin: 20px;
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    margin: 2% 33%;
+}
+
+button:hover, button:focus {
+    color: #fff;
+    outline: 0;
+}
+
+span {
+    text-align: center;
+    font-size: 28px;
+}
+
+#reload {
+    position: fixed;
+    right: 38%;
+    bottom: 15%
 }
