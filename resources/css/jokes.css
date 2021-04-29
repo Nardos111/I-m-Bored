@@ -1,0 +1,7 @@
+@import url("./style.css");
+@import url("./advice.css");
+#jokes {
+    position: fixed;
+    right: 40%;
+    bottom: 20%
+}
