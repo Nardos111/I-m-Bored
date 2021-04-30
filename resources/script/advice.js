@@ -15,9 +15,14 @@ const options = {
 
 loadAdvice.onclick = function () {
     fetch(API_URL, options)
-        .then((res) => {
+        .then(function (res) {
             return res.json();
-        }).then((data) => {
-            para.innerText = data['slip']['advice'];
+        }).then(function (data) {
+            advice = data['slip']['advice'];
+            para.innerText = advice;
+        })
+        .catch(function (error) {
+            console.log(error);
+
         });
 };
