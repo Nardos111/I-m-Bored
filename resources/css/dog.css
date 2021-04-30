@@ -1,5 +1,23 @@
 @import url("./advice.css");
+#getdog {
+    margin-left: 42%;
+}
+
 #dog {
-    width: 250px;
-    height: 250px;
+    float: left;
+    margin-left: 5%;
+}
+
+.details {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.bottom {
+    margin-bottom: 100px;
 }
