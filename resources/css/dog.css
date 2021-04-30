@@ -21,3 +21,20 @@
 .bottom {
     margin-bottom: 100px;
 }
+
+@media(max-width:630px) {
+    img {
+        height: 300px;
+        width: 550px;
+    }
+}
+
+@media(max-width:590px) {
+    img {
+        height: 300px;
+        width: 470px;
+    }
+    p, #heading {
+        font-size: 15px;
+    }
+}

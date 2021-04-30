@@ -1,4 +1,4 @@
-@import url("./style.css");
+@import url("./advice.css");
 .row {
     margin-right: 10%;
     margin-left: 10%;
@@ -7,36 +7,6 @@
 
 #getmeal {
     margin-left: 43%;
-}
-
-button {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: rgb(81, 28, 37);
-    border: 2px solid rgb(81, 28, 37);
-    border-radius: 0.6em;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    margin-bottom: 10px;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
-
-button:hover, button:focus {
-    color: #fff;
-    outline: 0;
 }
 
 ul {
@@ -50,4 +20,31 @@ ul {
 
 #instructions {
     line-height: 30px;
+}
+
+@media(max-width:900px) {
+    img {
+        width: 500px;
+        height: 400px;
+    }
+    p, ul {
+        font-size: 20px;
+    }
+    #getmeal {
+        margin-left: 35%;
+    }
+}
+
+@media(max-width:700px) {
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+    #getmeal {
+        margin-left: 25%;
+    }
 }

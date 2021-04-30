@@ -3,3 +3,11 @@ img {
     height: 24rem;
     padding: 60px 110px 0 60px;
 }
+
+@media(max-width:1400px) {
+    #card {
+        width: 400px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+}

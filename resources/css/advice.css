@@ -16,7 +16,6 @@ button {
     display: flex;
     align-self: center;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1;
     margin: 20px;
     padding: 1.2em 2.8em;
@@ -41,4 +40,48 @@ span {
     position: fixed;
     right: 40%;
     bottom: 20%
+}
+
+@media(max-width:800px) {
+    #card {
+        width: 400px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    #reload {
+        position: fixed;
+        right: 30%;
+        bottom: 10%
+    }
+}
+
+@media(max-width:700px) {
+    #card {
+        width: 400px;
+        height: 200px;
+        margin-top: 30px;
+        margin-left: 8%;
+    }
+    #reload {
+        position: fixed;
+        right: 30%;
+        bottom: 14%
+    }
+}
+
+@media(max-width:600px) {
+    #card {
+        width: 300px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 8%;
+    }
+    #reload {
+        position: fixed;
+        right: 25%;
+        bottom: 14%
+    }
+    p {
+        font-size: 20px;
+    }
 }
